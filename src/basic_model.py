@@ -3,7 +3,7 @@ from scipy.integrate import odeint
 
 def rumor_model(y, t, beta, gamma):
     """
-    Differential equations for the rumor model.
+    Differential equations for the spreading news model.
 
     Parameters:
         y (list): [I, S, R] fractions
@@ -22,7 +22,7 @@ def rumor_model(y, t, beta, gamma):
 
 def simulate_rumor(beta, gamma, I0=0.99, S0=0.01, R0=0.0, days=30):
     """
-    Simulate the rumor spreading model over time.
+    Simulate the news spreading model over time.
 
     Parameters:
         beta (float): spreading rate
